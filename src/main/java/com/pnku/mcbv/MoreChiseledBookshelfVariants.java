@@ -15,6 +15,6 @@ public class MoreChiseledBookshelfVariants implements ModInitializer {
     }
 
     public static Identifier asId(String path) {
-        return new Identifier(MODID, path);
+        return Identifier.of(MODID, path);
     }
 }
