@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:spruce_slab"
+    },
+     "B": {
+       "item": "minecraft:book"
+     }
+        },
+   "pattern":  [
+  "###",
+  "BBB",
+  "###"
+ ],
+  "result": {
+    "count": 1,
+    "id": "lolmcbv:spruce_chiseled_bookshelf"
+  }
+}

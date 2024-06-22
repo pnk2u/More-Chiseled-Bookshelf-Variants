@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:acacia_slab"
+    },
+     "B": {
+       "item": "minecraft:book"
+     }
+        },
+   "pattern":  [
+  "###",
+  "BBB",
+  "###"
+ ],
+  "result": {
+    "count": 1,
+    "id": "lolmcbv:acacia_chiseled_bookshelf"
+  }
+}

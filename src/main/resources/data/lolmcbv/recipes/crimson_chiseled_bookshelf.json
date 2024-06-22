@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:crimson_slab"
+    },
+     "B": {
+       "item": "minecraft:book"
+     }
+        },
+   "pattern":  [
+  "###",
+  "BBB",
+  "###"
+ ],
+  "result": {
+    "count": 1,
+    "id": "lolmcbv:crimson_chiseled_bookshelf"
+  }
+}

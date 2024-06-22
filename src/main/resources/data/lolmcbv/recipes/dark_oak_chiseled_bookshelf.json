@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:dark_oak_slab"
+    },
+     "B": {
+       "item": "minecraft:book"
+     }
+        },
+   "pattern":  [
+  "###",
+  "BBB",
+  "###"
+ ],
+  "result": {
+    "count": 1,
+    "id": "lolmcbv:dark_oak_chiseled_bookshelf"
+  }
+}

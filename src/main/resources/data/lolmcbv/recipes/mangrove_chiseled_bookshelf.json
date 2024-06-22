@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:mangrove_slab"
+    },
+     "B": {
+       "item": "minecraft:book"
+     }
+        },
+   "pattern":  [
+  "###",
+  "BBB",
+  "###"
+ ],
+  "result": {
+    "count": 1,
+    "id": "lolmcbv:mangrove_chiseled_bookshelf"
+  }
+}
