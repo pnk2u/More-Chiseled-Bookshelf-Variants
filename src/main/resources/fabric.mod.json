@@ -20,9 +20,10 @@
           "de.pnku.mcbv.MoreChiseledBookshelfVariants"
 		]
 	},
+	"accessWidener": "lolmcbv.accesswidener",
 	"depends": {
 		"fabricloader": ">=${loader_version}",
-		"minecraft": "~1.21",
+		"minecraft": ">=1.21.1",
 		"java": ">=21",
 		"fabric-api": ">=0.100.0"
 	},
