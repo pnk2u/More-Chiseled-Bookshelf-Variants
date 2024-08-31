@@ -1,17 +1,18 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "misc",
+  "group": "chiseled_bookshelves",
   "key": {
     "#": {
-      "item": "minecraft:mangrove_slab"
+      "item": "minecraft:mangrove_planks"
     },
-     "B": {
-       "item": "minecraft:book"
+     "-": {
+       "item": "minecraft:mangrove_slab"
      }
         },
    "pattern":  [
   "###",
-  "BBB",
+  "---",
   "###"
  ],
   "result": {

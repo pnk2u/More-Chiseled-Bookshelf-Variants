@@ -1,17 +1,18 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "misc",
+  "group": "chiseled_bookshelves",
   "key": {
     "#": {
-      "item": "minecraft:warped_slab"
+      "item": "minecraft:warped_planks"
     },
-     "B": {
-       "item": "minecraft:book"
+     "-": {
+       "item": "minecraft:warped_slab"
      }
         },
    "pattern":  [
   "###",
-  "BBB",
+  "---",
   "###"
  ],
   "result": {

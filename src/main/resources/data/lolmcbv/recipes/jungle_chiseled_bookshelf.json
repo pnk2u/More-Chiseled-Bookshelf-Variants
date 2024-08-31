@@ -1,17 +1,18 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "misc",
+  "group": "chiseled_bookshelves",
   "key": {
     "#": {
-      "item": "minecraft:jungle_slab"
+      "item": "minecraft:jungle_planks"
     },
-     "B": {
-       "item": "minecraft:book"
+     "-": {
+       "item": "minecraft:jungle_slab"
      }
         },
    "pattern":  [
   "###",
-  "BBB",
+  "---",
   "###"
  ],
   "result": {

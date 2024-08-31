@@ -1,17 +1,18 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "misc",
+  "group": "chiseled_bookshelves",
   "key": {
     "#": {
-      "item": "minecraft:bamboo_slab"
+      "item": "minecraft:bamboo_planks"
     },
-     "B": {
-       "item": "minecraft:book"
+     "-": {
+       "item": "minecraft:bamboo_slab"
      }
         },
    "pattern":  [
   "###",
-  "BBB",
+  "---",
   "###"
  ],
   "result": {
