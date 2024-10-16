@@ -3,6 +3,7 @@ package de.pnku.mcbv.init;
 import de.pnku.mcbv.MoreChiseledBookshelfVariants;
 import de.pnku.mcbv.block.MoreChiseledBookShelfBlock;
 import de.pnku.mcbv.block.MoreChiseledBookShelfBlockEntity;
+import net.fabricmc.fabric.api.object.builder.v1.block.entity.FabricBlockEntityTypeBuilder;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.level.block.Block;
@@ -42,7 +43,11 @@ public class McbvBlockInit {
         registerBlock(CRIMSON_CHISELED_BOOKSHELF);
         registerBlock(WARPED_CHISELED_BOOKSHELF);
 
-        MORE_CHISELED_BOOKSHELF_BLOCK_ENTITY = Registry.register(BuiltInRegistries.BLOCK_ENTITY_TYPE, MoreChiseledBookshelfVariants.asId("more_chiseled_bookshelf_variant"), BlockEntityType.Builder.of(MoreChiseledBookShelfBlockEntity::new, McbvBlockInit.more_chiseled_bookshelves.toArray(Block[]::new)).build());
+        MORE_CHISELED_BOOKSHELF_BLOCK_ENTITY =
+                Registry.register(BuiltInRegistries.BLOCK_ENTITY_TYPE,
+                        MoreChiseledBookshelfVariants.asId("more_chiseled_bookshelf_variant"),
+                        FabricBlockEntityTypeBuilder.create(MoreChiseledBookShelfBlockEntity::new, McbvBlockInit.more_chiseled_bookshelves.toArray(Block[]::new))
+                                .build());
 
     }
 

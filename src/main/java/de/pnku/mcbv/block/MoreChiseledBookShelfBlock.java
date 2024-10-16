@@ -1,6 +1,9 @@
 package de.pnku.mcbv.block;
 
+import de.pnku.mcbv.MoreChiseledBookshelfVariants;
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.registries.Registries;
+import net.minecraft.resources.ResourceKey;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
@@ -9,14 +12,12 @@ import net.minecraft.tags.ItemTags;
 import net.minecraft.world.Containers;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
-import net.minecraft.world.ItemInteractionResult;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.entity.BlockEntity;
-import net.minecraft.world.level.block.entity.ChiseledBookShelfBlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.Property;
 import net.minecraft.world.level.gameevent.GameEvent;
@@ -31,35 +32,35 @@ public class MoreChiseledBookShelfBlock extends ChiseledBookShelfBlock {
     public final String chiseledBookshelfWoodType;
 
     public MoreChiseledBookShelfBlock(MapColor colour, String chiseledBookshelfWoodType) {
-        super(Properties.ofFullCopy(Blocks.CHISELED_BOOKSHELF).mapColor(colour));
+        super(Properties.ofFullCopy(Blocks.CHISELED_BOOKSHELF).mapColor(colour).setId(ResourceKey.create(Registries.BLOCK, MoreChiseledBookshelfVariants.asId(chiseledBookshelfWoodType + "_chiseled_boookshelf"))));
         this.chiseledBookshelfWoodType = chiseledBookshelfWoodType;
     }
 
     public MoreChiseledBookShelfBlock(MapColor colour, SoundType soundType, String chiseledBookshelfWoodType) {
-        super(Properties.ofFullCopy(Blocks.CHISELED_BOOKSHELF).mapColor(colour).sound(soundType));
+        super(Properties.ofFullCopy(Blocks.CHISELED_BOOKSHELF).mapColor(colour).setId(ResourceKey.create(Registries.BLOCK, MoreChiseledBookshelfVariants.asId(chiseledBookshelfWoodType + "_chiseled_boookshelf"))).sound(soundType));
         this.chiseledBookshelfWoodType = chiseledBookshelfWoodType;
     }
 
     @Override
-    protected ItemInteractionResult useItemOn(ItemStack stack, BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hitResult) {
-        BlockEntity var9 = level.getBlockEntity(pos);
+    protected InteractionResult useItemOn(ItemStack itemStack, BlockState blockState, Level level, BlockPos blockPos, Player player, InteractionHand hand, BlockHitResult blockHitResult) {
+        BlockEntity var9 = level.getBlockEntity(blockPos);
         if (var9 instanceof MoreChiseledBookShelfBlockEntity moreChiseledBookShelfBlockEntity) {
-            if (!stack.is(ItemTags.BOOKSHELF_BOOKS)) {
-                return ItemInteractionResult.PASS_TO_DEFAULT_BLOCK_INTERACTION;
+            if (!itemStack.is(ItemTags.BOOKSHELF_BOOKS)) {
+                return InteractionResult.TRY_WITH_EMPTY_HAND;
             } else {
-                OptionalInt optionalInt = this.getHitSlot(hitResult, state);
+                OptionalInt optionalInt = this.getHitSlot(blockHitResult, blockState);
                 if (optionalInt.isEmpty()) {
-                    return ItemInteractionResult.SKIP_DEFAULT_BLOCK_INTERACTION;
-                } else if ((Boolean)state.getValue((Property)SLOT_OCCUPIED_PROPERTIES.get(optionalInt.getAsInt()))) {
-                    return ItemInteractionResult.PASS_TO_DEFAULT_BLOCK_INTERACTION;
+                    return InteractionResult.PASS;
+                } else if ((Boolean)blockState.getValue((Property)SLOT_OCCUPIED_PROPERTIES.get(optionalInt.getAsInt()))) {
+                    return InteractionResult.TRY_WITH_EMPTY_HAND;
                 } else {
-                    addBook(level, pos, player,(MoreChiseledBookShelfBlockEntity) moreChiseledBookShelfBlockEntity, stack, optionalInt.getAsInt());
-                    return ItemInteractionResult.sidedSuccess(level.isClientSide);
+                    addBook(level, blockPos, player, moreChiseledBookShelfBlockEntity, itemStack, optionalInt.getAsInt());
+                    return InteractionResult.SUCCESS;
                 }
             }
-        } else {
-            return ItemInteractionResult.SKIP_DEFAULT_BLOCK_INTERACTION;
-        }
+            } else {
+                return InteractionResult.PASS;
+            }
     }
 
     @Override
@@ -73,7 +74,7 @@ public class MoreChiseledBookShelfBlock extends ChiseledBookShelfBlock {
                 return InteractionResult.CONSUME;
             } else {
                 removeBook(level, pos, player, moreChiseledBookShelfBlockEntity, optionalInt.getAsInt());
-                return InteractionResult.sidedSuccess(level.isClientSide);
+                return InteractionResult.SUCCESS;
             }
         } else {
             return InteractionResult.PASS;
