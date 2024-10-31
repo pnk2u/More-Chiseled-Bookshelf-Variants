@@ -1,5 +1,8 @@
 package de.pnku.mcbv.block;
 
+import de.pnku.mcbv.MoreChiseledBookshelfVariants;
+import net.minecraft.core.registries.Registries;
+import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.material.MapColor;
 
