@@ -2,7 +2,6 @@ package de.pnku.mcbv.init;
 
 import de.pnku.mcbv.MoreChiseledBookshelfVariants;
 import de.pnku.mcbv.block.MoreChiseledBookShelfBlock;
-import de.pnku.mcbv.block.MoreChiseledBookShelfBlockEntity;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.level.block.Block;
@@ -25,7 +24,6 @@ public class McbvBlockInit {
     public static final MoreChiseledBookShelfBlock CRIMSON_CHISELED_BOOKSHELF = new MoreChiseledBookShelfBlock(MapColor.CRIMSON_STEM, SoundType.NETHER_WOOD, "crimson");
     public static final MoreChiseledBookShelfBlock WARPED_CHISELED_BOOKSHELF = new MoreChiseledBookShelfBlock(MapColor.WARPED_STEM, SoundType.NETHER_WOOD, "warped");
 
-    public static BlockEntityType<MoreChiseledBookShelfBlockEntity> MORE_CHISELED_BOOKSHELF_BLOCK_ENTITY;
 
     public static final List<Block> more_chiseled_bookshelves = new ArrayList<>();
 
@@ -42,12 +40,11 @@ public class McbvBlockInit {
         registerBlock(CRIMSON_CHISELED_BOOKSHELF);
         registerBlock(WARPED_CHISELED_BOOKSHELF);
 
-        MORE_CHISELED_BOOKSHELF_BLOCK_ENTITY = Registry.register(BuiltInRegistries.BLOCK_ENTITY_TYPE, MoreChiseledBookshelfVariants.asId("more_chiseled_bookshelf_variant"), BlockEntityType.Builder.of(MoreChiseledBookShelfBlockEntity::new, McbvBlockInit.more_chiseled_bookshelves.toArray(Block[]::new)).build());
-
     }
 
     private static void registerBlock(MoreChiseledBookShelfBlock chiseled_bookshelf) {
         Registry.register(BuiltInRegistries.BLOCK, MoreChiseledBookshelfVariants.asId(chiseled_bookshelf.chiseledBookshelfWoodType + "_chiseled_bookshelf"), chiseled_bookshelf);
         more_chiseled_bookshelves.add(chiseled_bookshelf);
+        BlockEntityType.CHISELED_BOOKSHELF.addSupportedBlock(chiseled_bookshelf);
     }
 }
