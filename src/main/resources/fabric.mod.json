@@ -21,7 +21,6 @@
           "de.pnku.mcbv.MoreChiseledBookshelfVariants"
 		]
 	},
-	"accessWidener": "lolmcbv.accesswidener",
 	"depends": {
 		"fabricloader": ">=${loader_version}",
 		"minecraft": ">1.21",
