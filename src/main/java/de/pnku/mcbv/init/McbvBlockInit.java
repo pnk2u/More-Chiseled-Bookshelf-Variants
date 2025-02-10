@@ -2,12 +2,10 @@ package de.pnku.mcbv.init;
 
 import de.pnku.mcbv.MoreChiseledBookshelfVariants;
 import de.pnku.mcbv.block.MoreChiseledBookShelfBlock;
-import net.fabricmc.fabric.api.object.builder.v1.block.entity.FabricBlockEntityType;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SoundType;
-import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.material.MapColor;
 
 import java.util.ArrayList;
@@ -46,8 +44,5 @@ public class McbvBlockInit {
     private static void registerBlock(MoreChiseledBookShelfBlock chiseled_bookshelf) {
         Registry.register(BuiltInRegistries.BLOCK, MoreChiseledBookshelfVariants.asId(chiseled_bookshelf.chiseledBookshelfWoodType + "_chiseled_bookshelf"), chiseled_bookshelf);
         more_chiseled_bookshelves.add(chiseled_bookshelf);
-        if (MoreChiseledBookshelfVariants.isNewerMcVersion) {
-            ((FabricBlockEntityType) BlockEntityType.CHISELED_BOOKSHELF).addSupportedBlock(chiseled_bookshelf);
-        }
     }
 }
