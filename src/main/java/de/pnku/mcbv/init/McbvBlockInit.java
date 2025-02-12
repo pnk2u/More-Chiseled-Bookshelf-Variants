@@ -19,6 +19,7 @@ public class McbvBlockInit {
     public static final MoreChiseledBookShelfBlock JUNGLE_CHISELED_BOOKSHELF = new MoreChiseledBookShelfBlock(MapColor.DIRT, "jungle");
     public static final MoreChiseledBookShelfBlock ACACIA_CHISELED_BOOKSHELF = new MoreChiseledBookShelfBlock(MapColor.COLOR_ORANGE, "acacia");
     public static final MoreChiseledBookShelfBlock DARK_OAK_CHISELED_BOOKSHELF = new MoreChiseledBookShelfBlock(MapColor.COLOR_BROWN, "dark_oak");
+    public static final MoreChiseledBookShelfBlock PALE_OAK_CHISELED_BOOKSHELF = new MoreChiseledBookShelfBlock(MapColor.QUARTZ, "pale_oak");
     public static final MoreChiseledBookShelfBlock MANGROVE_CHISELED_BOOKSHELF = new MoreChiseledBookShelfBlock(MapColor.COLOR_RED, "mangrove");
     public static final MoreChiseledBookShelfBlock CHERRY_CHISELED_BOOKSHELF = new MoreChiseledBookShelfBlock(MapColor.TERRACOTTA_WHITE, SoundType.CHERRY_WOOD, "cherry");
     public static final MoreChiseledBookShelfBlock BAMBOO_CHISELED_BOOKSHELF = new MoreChiseledBookShelfBlock(MapColor.COLOR_YELLOW, SoundType.BAMBOO_WOOD, "bamboo");
@@ -35,6 +36,7 @@ public class McbvBlockInit {
         registerBlock(JUNGLE_CHISELED_BOOKSHELF);
         registerBlock(ACACIA_CHISELED_BOOKSHELF);
         registerBlock(DARK_OAK_CHISELED_BOOKSHELF);
+        registerBlock(PALE_OAK_CHISELED_BOOKSHELF);
         registerBlock(MANGROVE_CHISELED_BOOKSHELF);
         registerBlock(CHERRY_CHISELED_BOOKSHELF);
         registerBlock(BAMBOO_CHISELED_BOOKSHELF);
