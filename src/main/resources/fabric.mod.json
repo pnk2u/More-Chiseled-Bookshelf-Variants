@@ -12,7 +12,7 @@
 		"issues": "https://github.com/pnk2u/More-Chiseled-Bookshelf-Variants/issues"
 	},
 	"license": "${mod_license}",
-	"icon": "logo.png",
+	"icon": "icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
