@@ -4,7 +4,7 @@ import de.pnku.mcbv.init.McbvBlockInit;
 import de.pnku.mcbv.init.McbvItemInit;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.loader.api.FabricLoader;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -18,7 +18,7 @@ public class MoreChiseledBookshelfVariants implements ModInitializer {
         McbvItemInit.registerItems();
     }
 
-    public static ResourceLocation asId(String path) {
-        return ResourceLocation.fromNamespaceAndPath(MODID, path);
+    public static Identifier asId(String path) {
+        return Identifier.fromNamespaceAndPath(MODID, path);
     }
 }
