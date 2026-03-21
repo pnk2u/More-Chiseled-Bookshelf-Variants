@@ -38,13 +38,15 @@
 <a name="translations"></a>
 ### <img height="24" align="left" src="https://raw.githubusercontent.com/pnk2u/resources/main/ModProjects/shared/pres/icon/translate.svg"> Translations
 
-Currently available in:
-- English (US/UK)
-- German
-- Russian (Thanks to [@Alexander317](/../../../../Alexander317) with [PR #1](../../pull/1), added in [`1.5.5`](./CHANGELOG_history.md#1.5.5))
-- Ukrainian (Thanks to @[StarmanMine142](/../../../../StarmanMine142) with [PR #6](../../pull/6), added in [`1.7.1`](./CHANGELOG_history.md#1.7.1))
-- Simplified Chinese (Thanks to [@Surbenii](/../../../../Surbenii) with [PR #7](../../pull/7), added in [`1.7.1`](./CHANGELOG_history.md#1.7.1))
-- French (Thanks to [@Peperehobbits01](/../../../../Peperehobbits01) with [PR #8](../../pull/8)/[9](../../pull/9), added in [`1.7.2`](./CHANGELOG_history.md#1.7.3))
+|Language|Translator|
+|--|--|
+|English||
+|German||
+|Russian|@[Alexander317](/../../../../Alexander317) with [PR #1](../../pull/1), added in [`1.5.5`](./CHANGELOG_history.md#1.5.5)|
+|Ukrainian|@[StarmanMine142](/../../../../StarmanMine142) with [PR #6](../../pull/6), added in [`1.7.1`](./CHANGELOG_history.md#1.7.1)|
+|Chinese (zh_cn)|@[Surbenii](/../../../../Surbenii) with [PR #7](../../pull/7), added in [`1.7.1`](./CHANGELOG_history.md#1.7.1)|
+|French|@[Peperehobbits01](/../../../../Peperehobbits01) with [PR #8](../../pull/8)/[9](../../pull/9), added in [`1.7.2`](./CHANGELOG_history.md#1.7.3)|
+|Japanese|@[HayaKoh-WeldyAlin](/../../../../HayaKoh-WeldyAlin) with [PR #11](../../pull/11), added in [`1.7.5`](./CHANGELOG_history.md#1.7.5)|
 
 > [!NOTE]
 > > Want to help translate? If you can, please open a PR to the **default branch** [`1.21(.1)`](../../tree/1.21(.1)).  
