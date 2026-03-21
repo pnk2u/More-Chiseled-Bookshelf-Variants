@@ -131,8 +131,8 @@ def minecraft_version_0() {
 
 def minecraft_version_1() {
 	String key = 'minecraft_version_upper'
-	if (project.hasProperty(key)) {String value = project.getProperties().get(key); return !value.isEmpty() ? value : "2.0.0"}
-	else {return "2.0.0"} // Effectively no upper bound
+	if (project.hasProperty(key)) {String value = project.getProperties().get(key); return !value.isEmpty() ? value : "99.0.0"}
+	else {return "99.0.0"} // Effectively no upper bound
 }
 
 def getJavaVersionNum() { if (project.minecraft_version.startsWith("1.20")) {return 17} else return 21 }
