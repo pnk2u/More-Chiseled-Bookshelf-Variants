@@ -60,20 +60,16 @@
 ### Versions
 <a name="most-recent-version"></a>
 <!--CHANGELOG:START-->
-<a name="1.7.4"></a>
-#### 1.7.4[*](#footnote-*):
-- Fix _Chiseled Bookshelves_ dropping themselves even when mined without Silk Touch
-    > Now they only drop themselves when mined with Silk Touch, otherwise they drop 3 books mimicking the vanilla _Bookshelf_ behavior.
-- `1.21.4(-11)`: Fix _Chiseled Bookshelves_ not dropping at all even when mined with Silk Touch
+<a name="1.7.5"></a>
+#### 1.7.5[*](#footnote-*):
+- `26.1`: Update to <ins>26.1</ins>
+- Add Japanese translation (Thanks to [@HayaKoh-WeldyAlin](https://www.github.com/HayaKoh-WeldyAlin))
 
-<br></br>
-<sub>License update to [CC-BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) (previously [MIT](https://opensource.org/licenses/MIT))</sub>
-
-  <h2><sub><sub><sup><ins>Download 1.7.4 + 1.21.4(-11)</ins>:</sup>&#x200A;
-  <a title="Download (Modrinth):&#10;More Chiseled Bookshelf Variants 1.7.4 + 1.21.4(-11)" href="https://www.modrinth.com/mod/vkun3O1z/version/ehyywgAj">
+  <h2><sub><sub><sup><ins>Download 1.7.5 + 26.1</ins>:</sup>&#x200A;
+  <a title="Download (Modrinth):&#10;More Chiseled Bookshelf Variants 1.7.5 + 26.1" href="https://www.modrinth.com/mod/vkun3O1z/version/InwVhIs0">
   <img width=26 src="https://img.shields.io/badge/-%20-%23032a?style=flat&logo=modrinth"></a>
   <sup><img width=7 height=10 src="https://raw.githubusercontent.com/pnk2u/resources/main/ModProjects/shared/pres/icon/separator_v.svg"></sup>
-  <a title="Download (Curseforge):&#10;1.7.4 + 1.21.4(-11) - More Chiseled Bookshelf Variants" href="https://www.curseforge.com/minecraft/mc-mods/more-chiseled-bookshelf-variants/files/7774206">
+  <a title="Download (Curseforge):&#10;1.7.5 + 26.1 - More Chiseled Bookshelf Variants" href="https://www.curseforge.com/minecraft/mc-mods/more-chiseled-bookshelf-variants/files/7791368">
   <img width=26 src="https://img.shields.io/badge/--%23302a?style=flat&logo=curseforge"></a>
   </sub></sub></h2>
 
