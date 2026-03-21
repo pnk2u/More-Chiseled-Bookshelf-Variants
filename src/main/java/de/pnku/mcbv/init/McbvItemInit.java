@@ -2,7 +2,7 @@ package de.pnku.mcbv.init;
 
 import de.pnku.mcbv.MoreChiseledBookshelfVariants;
 import de.pnku.mcbv.block.MoreChiseledBookShelfBlock;
-import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.fabricmc.fabric.api.creativetab.v1.CreativeModeTabEvents;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
@@ -53,6 +53,6 @@ public class McbvItemInit {
     private static void registerItem(BlockItem chiseled_bookshelf, Item chiseled_bookshelfAfter) {
         Registry.register(BuiltInRegistries.ITEM, MoreChiseledBookshelfVariants.asId(((MoreChiseledBookShelfBlock) chiseled_bookshelf.getBlock()).chiseledBookshelfWoodType + "_chiseled_bookshelf"), chiseled_bookshelf);
 
-        ItemGroupEvents.modifyEntriesEvent(CreativeModeTabs.FUNCTIONAL_BLOCKS).register(entries -> entries.addAfter(chiseled_bookshelfAfter, chiseled_bookshelf));
+        CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.FUNCTIONAL_BLOCKS).register(entries -> entries.insertAfter(chiseled_bookshelfAfter, chiseled_bookshelf));
     }
 }

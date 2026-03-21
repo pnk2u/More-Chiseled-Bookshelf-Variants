@@ -48,6 +48,6 @@ public class McbvBlockInit {
     private static void registerBlock(MoreChiseledBookShelfBlock chiseled_bookshelf) {
         Registry.register(BuiltInRegistries.BLOCK, MoreChiseledBookshelfVariants.asId(chiseled_bookshelf.chiseledBookshelfWoodType + "_chiseled_bookshelf"), chiseled_bookshelf);
         more_chiseled_bookshelves.add(chiseled_bookshelf);
-        ((FabricBlockEntityType) BlockEntityType.CHISELED_BOOKSHELF).addSupportedBlock(chiseled_bookshelf);
+        ((FabricBlockEntityType) BlockEntityType.CHISELED_BOOKSHELF).addValidBlock(chiseled_bookshelf);
     }
 }
