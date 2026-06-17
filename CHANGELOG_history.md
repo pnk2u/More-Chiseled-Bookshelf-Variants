@@ -1,3 +1,15 @@
+<a name="1.7.6"></a>
+### 1.7.6:
+- `26.1(2)`: Update to <ins>26.2</ins>  
+
+
+<h2><sub><sub><sup><ins>Download 1.7.6 + 26.1(2)</ins>:</sup>&#x200A;
+<a title="Download (Modrinth):&#10;More Chiseled Bookshelf Variants 1.7.6 + 26.1(2)" href="https://www.modrinth.com/mod/vkun3O1z/version/cAxohR3D">
+<img width=26 src="https://img.shields.io/badge/-%20-%23032a?style=flat&logo=modrinth"></a>&#x200A;
+<a title="Download (Curseforge):&#10;1.7.6 + 26.1(2) - More Chiseled Bookshelf Variants" href="https://www.curseforge.com/minecraft/mc-mods/more-chiseled-bookshelf-variants/files/8262882">
+<img width=26 src="https://img.shields.io/badge/--%23302a?style=flat&logo=curseforge"></a>
+</sub></sub></h2>
+
 <a name="1.7.5"></a>
 ### 1.7.5:
 - `26.1`: Update to <ins>26.1</ins>
