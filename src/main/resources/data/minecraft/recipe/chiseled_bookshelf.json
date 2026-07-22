@@ -1,7 +1,15 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "ingredients": [
-    "#lieonstudio:chiseled_bookshelves"
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "chiseled_bookshelves",
+  "key": {
+    "#": "#lolmcbv:vanilla_chiseled_bookshelf_planks",
+    "-": "#lolmcbv:vanilla_chiseled_bookshelf_slabs"
+  },
+  "pattern":  [
+    "###",
+    "---",
+    "###"
   ],
   "result": {
     "count": 1,

@@ -1,13 +1,13 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_lots_of_items": {
+    "has_slab": {
       "conditions": {
-        "slots": {
-          "occupied": {
-            "min": 10
+        "items": [
+          {
+            "items": "#lolmcbv:vanilla_chiseled_bookshelf_slabs"
           }
-        }
+        ]
       },
       "trigger": "minecraft:inventory_changed"
     },
@@ -15,9 +15,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "minecraft:dark_oak_slab"
-            ]
+            "items": "#lolmcbv:vanilla_chiseled_bookshelf_planks"
           }
         ]
       },
@@ -25,14 +23,14 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipes": ["lolmcbv:dark_oak_chiseled_bookshelf"]
+        "recipes": ["minecraft:chiseled_bookshelf"]
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_lots_of_items",
+      "has_slab",
       "has_the_recipe"
     ],
     [
@@ -42,7 +40,7 @@
   ],
   "rewards": {
     "recipes": [
-      "lolmcbv:dark_oak_chiseled_bookshelf"
+      "minecraft:chiseled_bookshelf"
     ]
   },
   "sends_telemetry_event": false

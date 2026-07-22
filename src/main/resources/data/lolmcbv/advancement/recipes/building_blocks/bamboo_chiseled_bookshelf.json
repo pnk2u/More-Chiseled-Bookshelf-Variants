@@ -1,13 +1,15 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_lots_of_items": {
+    "has_slab": {
       "conditions": {
-        "slots": {
-          "occupied": {
-            "min": 10
+        "items": [
+          {
+            "items": [
+              "minecraft:bamboo_slab"
+            ]
           }
-        }
+        ]
       },
       "trigger": "minecraft:inventory_changed"
     },
@@ -16,7 +18,7 @@
         "items": [
           {
             "items": [
-              "minecraft:warped_slab"
+              "minecraft:bamboo_planks"
             ]
           }
         ]
@@ -25,14 +27,14 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipes": ["lolmcbv:warped_chiseled_bookshelf"]
+        "recipes": ["lolmcbv:bamboo_chiseled_bookshelf"]
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_lots_of_items",
+      "has_slab",
       "has_the_recipe"
     ],
     [
@@ -42,7 +44,7 @@
   ],
   "rewards": {
     "recipes": [
-      "lolmcbv:warped_chiseled_bookshelf"
+      "lolmcbv:bamboo_chiseled_bookshelf"
     ]
   },
   "sends_telemetry_event": false
