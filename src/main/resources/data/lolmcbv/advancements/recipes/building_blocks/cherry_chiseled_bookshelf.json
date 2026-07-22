@@ -1,13 +1,15 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_lots_of_items": {
+    "has_slab": {
       "conditions": {
-        "slots": {
-          "occupied": {
-            "min": 10
+        "items": [
+          {
+            "items": [
+              "minecraft:cherry_slab"
+            ]
           }
-        }
+        ]
       },
       "trigger": "minecraft:inventory_changed"
     },
@@ -16,7 +18,7 @@
         "items": [
           {
             "items": [
-              "minecraft:acacia_slab"
+              "minecraft:cherry_planks"
             ]
           }
         ]
@@ -25,14 +27,14 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "lolmcbv:acacia_chiseled_bookshelf"
+        "recipe": "lolmcbv:cherry_chiseled_bookshelf"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_lots_of_items",
+      "has_slab",
       "has_the_recipe"
     ],
     [
@@ -42,7 +44,7 @@
   ],
   "rewards": {
     "recipes": [
-      "lolmcbv:acacia_chiseled_bookshelf"
+      "lolmcbv:cherry_chiseled_bookshelf"
     ]
   },
   "sends_telemetry_event": false
