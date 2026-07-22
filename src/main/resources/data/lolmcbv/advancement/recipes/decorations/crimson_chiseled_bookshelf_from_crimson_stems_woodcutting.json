@@ -1,4 +1,12 @@
 {
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "nemos_woodcutter"
+      ]
+    }
+  ],
   "parent": "minecraft:recipes/root",
   "criteria": {
     "has_crimson_wood": {
@@ -13,7 +21,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:crimson_chiseled_bookshelf_from_crimson_stems_woodcutting"
+        "recipes": ["minecraft:crimson_chiseled_bookshelf_from_crimson_stems_woodcutting"]
       },
       "trigger": "minecraft:recipe_unlocked"
     }

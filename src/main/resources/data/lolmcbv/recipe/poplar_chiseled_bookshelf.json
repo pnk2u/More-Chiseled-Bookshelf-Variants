@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "chiseled_bookshelves",
+  "key": {
+    "#": "minecraft:poplar_planks",
+     "-": "minecraft:poplar_slab"
+        },
+   "pattern":  [
+  "###",
+  "---",
+  "###"
+ ],
+  "result": {
+    "count": 1,
+    "id": "lolmcbv:poplar_chiseled_bookshelf"
+  }
+}
