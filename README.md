@@ -61,24 +61,14 @@
 ### Versions
 <a name="most-recent-version"></a>
 <!--CHANGELOG:START-->
-<a name="1.8.0"></a>
-### 1.8.0[*](#footnote-*):
-- `26.3`:
-    - Update to <ins>26.3</ins>
-    - Add _**Poplar** Chiseled Bookshelf_ (Textures by [hunnycakehorse](https://www.modrinth.com/user/hunnycakehorse))
-- Implement _Tag Entry Removal_ in _(Vanilla/)**Oak** Chiseled Bookshelf_ recipe
-  >  #### What this means:
-  > - _(Vanilla/) **Oak** Chiseled Bookshelves_ can now be crafted natively with any modded Planks as well as _**Oak** Planks_.
-  > - _More Compatibility Variants_ datapacks are no longer necessary for this mod.
-  > - For this functionality the latest <ins>Fabric API</ins> (&#x200A;<sub><a title="Fabric API&#10;on Modrinth" href="https://modrinth.com/mod/fabric-api/"><img width=20 src="https://img.shields.io/badge/-%20-%23032a?style=flat&logo=modrinth"></a></sub><!--SEPARATOR_V:MR--><img width=5 height=8 src="https://raw.githubusercontent.com/pnk2u/resources/main/ModProjects/shared/pres/icon/separator_v.svg"><sub><a title="Fabric API&#10;on Curseforge" href="https://www.curseforge.com/minecraft/mc-mods/fabric-api/"><img width=20 src="https://img.shields.io/badge/--%23302a?style=flat&logo=curseforge"></a></sub>&#x200A;) version is required before <ins>26.1.2</ins> and is available for the following versions:
-  >   - <ins>1.20.1</ins>: [`0.92.11+1.20.1`](https://modrinth.com/mod/fabric-api/version/0.92.11+1.20.1)
-  >   - <ins>1.21.1</ins>: [`0.116.14+1.21.1`](https://modrinth.com/mod/fabric-api/version/0.116.14+1.21.1)
-  >   - <ins>1.21.11</ins>: [`0.141.5+1.21.11`](https://modrinth.com/mod/fabric-api/version/0.141.5+1.21.11)
+<a name="1.8.1"></a>
+#### 1.8.1[*](#footnote-*):
+- `1.21.4(-11)`, `26.1(-3)`: Fix recipe reverting _Chiseled Bookshelf_ Variants back to the default _(Vanilla/)**Oak** Chiseled Bookshelf_ not being up-to-date
 
-<h2><sub><sub><sup><ins>Download 1.8.0 + 26.1(2)</ins>:</sup>&#x200A;
-<a title="Download (Modrinth):&#10;More Chiseled Bookshelf Variants 1.8.0 + 26.1(2)" href="https://www.modrinth.com/mod/vkun3O1z/version/96182rl3">
+<h2><sub><sub><sup><ins>Download 1.8.1 + 26.1(2)</ins>:</sup>&#x200A;
+<a title="Download (Modrinth):&#10;More Chiseled Bookshelf Variants 1.8.1 + 26.1(2)" href="https://www.modrinth.com/mod/vkun3O1z/version/IQtQPiON">
 <img width=26 src="https://img.shields.io/badge/-%20-%23032a?style=flat&logo=modrinth"></a>&#x200A;
-<a title="Download (Curseforge):&#10;1.8.0 + 26.1(2) - More Chiseled Bookshelf Variants" href="https://www.curseforge.com/minecraft/mc-mods/more-chiseled-bookshelf-variants/files/8487515">
+<a title="Download (Curseforge):&#10;1.8.1 + 26.1(2) - More Chiseled Bookshelf Variants" href="https://www.curseforge.com/minecraft/mc-mods/more-chiseled-bookshelf-variants/files/8665174">
 <img width=26 src="https://img.shields.io/badge/--%23302a?style=flat&logo=curseforge"></a>
 </sub></sub></h2>
 
