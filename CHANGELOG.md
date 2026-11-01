@@ -1,4 +1,4 @@
-<!--publish=false-->
+<!--publish=true-->
 ### 1.8.2:
 - `26.3`:
   - Fix _Chiseled Bookshelf_ variants dropping when mined (without _Silk Touch_)
