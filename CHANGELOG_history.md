@@ -1,3 +1,16 @@
+<a name="1.8.2"></a>
+### 1.8.2:
+- `26.3`:
+  - Fix _Chiseled Bookshelf_ variants dropping when mined (without _Silk Touch_)
+  - Fix _**Poplar** Chiseled Bookshelf_ variant having no correct mining tool (_Axe_)
+
+<h2><sub><sub><sup><ins>Download 1.8.2 + 26.3</ins>:</sup>&#x200A;
+<a title="Download (Modrinth):&#10;More Chiseled Bookshelf Variants 1.8.2 + 26.3" href="https://www.modrinth.com/mod/vkun3O1z/version/qhUp5KRa">
+<img width=26 src="https://img.shields.io/badge/-%20-%23032a?style=flat&logo=modrinth"></a>&#x200A;
+<a title="Download (Curseforge):&#10;1.8.2 + 26.3 - More Chiseled Bookshelf Variants" href="https://www.curseforge.com/minecraft/mc-mods/more-chiseled-bookshelf-variants/files/9395686">
+<img width=26 src="https://img.shields.io/badge/--%23302a?style=flat&logo=curseforge"></a>
+</sub></sub></h2>
+
 <a name="1.8.1"></a>
 ### 1.8.1:
 - `1.21.4(-11)`, `26.1(-3)`: Fix recipe reverting _Chiseled Bookshelf_ Variants back to the default _(Vanilla/)**Oak** Chiseled Bookshelf_ not being up-to-date
